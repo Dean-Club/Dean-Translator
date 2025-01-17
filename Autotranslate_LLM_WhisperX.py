@@ -6,10 +6,10 @@ from datetime import timedelta
 
 # ============ 配置部分 ============
 LLM_API_URL = "http://127.0.0.1:1234/v1/chat/completions"
-LLM_MODEL = "llama-3.2-3b-instruct"
+LLM_MODEL = "meta-llama-3.1-8b-instruct"
 
 # WhisperX 模型名称
-WHISPER_MODEL_NAME = "medium"
+WHISPER_MODEL_NAME = "large-v3"
 WHISPER_COMPUTE_TYPE = "int8"  # 可视情况改为 "float32" 或 "float16"
 WHISPER_ASR_OPTIONS = {
     "multilingual": True,

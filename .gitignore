@@ -1,0 +1,47 @@
+# Ignore video files
+*.mp4
+*.m4v
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mkv
+
+# Ignore audio files
+*.mp3
+*.wav
+*.aac
+*.ogg
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+*.out
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment folder
+.venv/
+
+# Ignore environment configuration files
+*.env
+
+# Ignore IDE configuration files
+.idea/
+.vscode/
+
+# Ignore cache files
+.cache/
+*.bak
+
+# Ignore subtitle output files
+*.vtt
+*.ass

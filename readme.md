@@ -3,6 +3,7 @@
 # What is this tool?
 This tool combines based on OpenAI's **WhisperX** speech transcription tool with translation options using the **DeepL API** or local/cloud-based **large language models (LLMs)** to efficiently generate multilingual subtitles.
 WhisperX：https://github.com/m-bain/whisperX
+
 ---
 
 ## **Target Audience**
@@ -164,6 +165,7 @@ WhisperX：https://github.com/m-bain/whisperX
 # 这个工具是什么？
 本工具结合了基于OpenAI 的 **WhisperX** 语音转录工具，通过 **DeepL API** 或本地/云端的大语言模型（LLMs），高效生成多语言字幕。
 WhisperX：https://github.com/m-bain/whisperX
+
 ---
 
 ## **适用人群**

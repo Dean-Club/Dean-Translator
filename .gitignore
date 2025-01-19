@@ -1,5 +1,5 @@
 # Ignore video files
-# *.mp4
+*.mp4
 *.m4v
 *.avi
 *.mov
@@ -45,3 +45,7 @@ __pycache__/
 # Ignore subtitle output files
 *.vtt
 *.ass
+
+.Generated_subtitles
+.Video_to_translate
+*.srt

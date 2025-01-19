@@ -122,9 +122,9 @@ def generate_translated_srt(
             end_srt = format_srt_time(segment["end"])
 
             text = segment["text"].strip()
-            print(f"Translating text: {text}")
+            # print(f"Translating text: {text}")
             translated_text = local_translate_with_memory(text, conversation_history)
-            print(f"Translated text: {translated_text}")
+            # print(f"Translated text: {translated_text}")
 
             # 写入 SRT
             srt_file.write(f"{i}\n")

@@ -2,11 +2,10 @@ import os
 import torch
 import requests
 import whisperx
-from datetime import timedelta
 
 # ============ 配置部分 ============
 LLM_API_URL = "http://127.0.0.1:1234/v1/chat/completions"
-LLM_MODEL = "llama-3.2-3b-instruct"
+LLM_MODEL = "hermes-3-llama-3.1-8b"
 
 # WhisperX 模型名称
 WHISPER_MODEL_NAME = "medium"

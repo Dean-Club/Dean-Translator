@@ -1,4 +1,6 @@
---Chinese version velow--
+# English version
+(Chinese version below)
+(This tool is developed by Student from Friedlich Alexander University Erlangen-Nuernberg, was inspired by FAUtv)
 
 # What is this tool?
 
@@ -175,6 +177,8 @@ WhisperX: https://github.com/m-bain/whisperX
 
 ---
 
+# 中文版
+(这个工具由埃尔朗根-纽伦堡大学的学生开发，受到FAUtv的启发)
 # 这个工具是什么？
 本工具结合了基于OpenAI 的 **WhisperX** 语音转录工具，通过 **DeepL API** 或本地/云端的大语言模型（LLMs），高效生成多语言字幕。
 WhisperX：https://github.com/m-bain/whisperX
@@ -296,7 +300,7 @@ WhisperX：https://github.com/m-bain/whisperX
 ### **5. 查看输出结果**
 - 字幕文件会保存到 `Generated_subtitles` 文件夹。
 - 将视频文件和字幕文件放在同一文件夹下，使用 PotPlayer 等播放器即可播放带字幕的视频。
-
+仓库中提供了示例视频‘2020S-Qiuqing-Tai-Tiktok.mp4’，可以供测试参考，此外在字幕生成文件夹中提供了多种生成的翻译的字幕文件，可以参考翻译效果。
 ---
 ## **Q&A 安装问题**
 ### **1. 有一些警告可以忽略**

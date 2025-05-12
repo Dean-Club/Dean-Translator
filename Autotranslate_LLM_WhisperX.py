@@ -5,14 +5,18 @@ import whisperx
 
 # ============ 配置部分 ============
 LLM_API_URL = "http://127.0.0.1:1234/v1/chat/completions"
-LLM_MODEL = "hermes-3-llama-3.1-8b"
+LLM_MODEL = "gemma-3-12b-it-qat"
 
 # WhisperX 模型名称
 WHISPER_MODEL_NAME = "medium"
 WHISPER_COMPUTE_TYPE = "int8"  # 可视情况改为 "float32" 或 "float16"
 WHISPER_ASR_OPTIONS = {
-    "multilingual": True,
-    "hotwords": None,
+    #  "multilingual": True,
+    # "hotwords": None,
+    # "patience": 1.2,  # 允许稍微耐心地生成文本，确保完整性
+     "length_penalty": 20,  # 惩罚长句生成
+     "word_timestamps": True  # 启用单词级时间戳
+    # "max_new_tokens": 100  # 限制生成文本长度，避免过长
 }
 
 # 对齐模型语言代码（与源语言保持一致）

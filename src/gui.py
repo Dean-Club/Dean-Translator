@@ -62,7 +62,7 @@ class TranscribeWindow(QWidget):
         # 计算类型选择
         self.compute_label = QLabel("计算类型：")
         self.compute_choice = QComboBox()
-        self.compute_choice.addItems(["float16", "float32"])
+        self.compute_choice.addItems(["int8","float16", "float32"])
         self.compute_choice.setCurrentText("float16")
 
         # 语言代码选择
@@ -70,6 +70,12 @@ class TranscribeWindow(QWidget):
         self.language_choice = QComboBox()
         self.language_choice.addItems(["en", "zh", "de", "fr", "es"])
         self.language_choice.setCurrentText("en")
+        
+        # LLM 模型选择（新增）
+        self.llm_label = QLabel("LLM 模型：")
+        self.llm_choice = QComboBox()
+        self.llm_choice.addItems(["meta-llama-3.1-8b-instruct", "gemma-3-12b-it-qat"])
+        self.llm_choice.setCurrentText("qwen-2")
 
         # 启动/取消按钮
         self.start_button = QPushButton("开始转录")
@@ -98,6 +104,10 @@ class TranscribeWindow(QWidget):
 
         layout.addWidget(self.language_label)
         layout.addWidget(self.language_choice)
+        
+        layout.addWidget(self.llm_label)
+        layout.addWidget(self.llm_choice)
+
 
         button_layout = QHBoxLayout()
         button_layout.addWidget(self.start_button)
@@ -134,7 +144,9 @@ class TranscribeWindow(QWidget):
                 "length_penalty": 20,
                 "word_timestamps": True
             },
-            "align_model_language_code": self.language_choice.currentText()
+            "align_model_language_code": self.language_choice.currentText(),
+            "llm_model_name": self.llm_choice.currentText()
+
         }
 
         # 启动线程

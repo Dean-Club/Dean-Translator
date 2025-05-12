@@ -10,8 +10,10 @@ def main(
     whisper_model_name,
     whisper_compute_type,
     whisper_asr_options,
-    align_model_language_code
+    align_model_language_code,
+    llm_model_name  # ✅ 新增参数
 ):
+    print("[DEBUG] 使用 LLM 模型：", llm_model_name)
     torch.cuda.empty_cache()
 
     video_files = [
